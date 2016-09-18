@@ -1,7 +1,11 @@
-.app {
+body {
+  display: flex;
+  font-family: "Karla", sans-serif;
+}
 
+.app {
   margin: 25px;
-  background: white;
+  background: #eff0f1;
 }
 
 .navigation-container {
@@ -11,8 +15,18 @@
   /*box-sizing: border-box;*/
 }
 
-.menu {
+.heart-div {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
 
+.heart {
+  width: 30%;
+  fill: rgba(51,184,131,1);
+}
+
+.menu {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -36,19 +50,23 @@
   padding: 25px;
 }
 
+.menu-items li a:hover {
+  color: rgba(51,184,131,1);
+}
 
-.logo {
-  box-sizing: border-box;
-  width: 25%;
-  background: gray;
-  height: 100px;
+.menu-items li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+main {
+  padding: 15px;
 }
 
 .gradient-wrap {
-  /*position: relative;*/
-  background-attachment: fixed;
-  /*max-width: 1600px;*/
-  /*height: 100vh;*/
+  position: relative;
+  width: 100%;
   background: rgba(22,0,69,1);
   background: -moz-linear-gradient(-45deg, rgba(22,0,69,1) 0%, rgba(50,38,138,1) 31%, rgba(51,184,131,1) 90%, rgba(51,184,131,1) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(22,0,69,1)), color-stop(31%, rgba(50,38,138,1)), color-stop(90%, rgba(51,184,131,1)), color-stop(100%, rgba(51,184,131,1)));
@@ -56,6 +74,43 @@
   background: -o-linear-gradient(-45deg, rgba(22,0,69,1) 0%, rgba(50,38,138,1) 31%, rgba(51,184,131,1) 90%, rgba(51,184,131,1) 100%);
   background: -ms-linear-gradient(-45deg, rgba(22,0,69,1) 0%, rgba(50,38,138,1) 31%, rgba(51,184,131,1) 90%, rgba(51,184,131,1) 100%);
   background: linear-gradient(135deg, rgba(22,0,69,1) 0%, rgba(50,38,138,1) 31%, rgba(51,184,131,1) 90%, rgba(51,184,131,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#160045', endColorstr='#33b883', GradientType=1 );
+
 }
 
+.section-name {
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.gallery {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery li {
+  list-style: none;
+}
+
+.gallery li {
+  padding-bottom: 25px;
+}
+
+.gallery li:nth-child(odd) div {
+  background: #3e94ae;
+}
+
+.gallery li:nth-child(even) div {
+  background: #51b096;;
+}
+
+
+
+.gallery-img {
+  position: relative;
+  top: 10px;
+  left: 6px;
+  mix-blend-mode: multiply;
+
+}
