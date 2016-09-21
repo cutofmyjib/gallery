@@ -12,7 +12,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  /*box-sizing: border-box;*/
 }
 
 .svg-div {
@@ -30,7 +29,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 125px;
+  height: 95px;
   box-sizing: border-box;
   width: 75%;
   background: black;
@@ -97,12 +96,12 @@ main, footer {
   padding-bottom: 25px;
 }
 
-.gallery li div {
+.gallery-img-div {
   padding-left: 15px;
-  height: 450px;
+  height: 350px;
 }
 
-.gallery li:nth-child(odd) div {
+.gallery li:nth-child(odd) > div {
   background: #3e94ae;
 }
 
@@ -110,10 +109,19 @@ main, footer {
   background: #51b096;;
 }
 
-.gallery-img {
+.gallery-img-div div {
+  width: 350px;
+  height: 275px;
   position: relative;
-  top: 10px;
-  left: 3px;
+  top: -10px;
+  left: 10px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
   mix-blend-mode: multiply;
 }
 
