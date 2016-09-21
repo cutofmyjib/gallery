@@ -4,25 +4,39 @@ body {
 }
 
 .app {
-  margin: 25px;
+  max-width: 980px;
+  margin: 25px auto;
   background: #d7d8d8;
 }
 
 .navigation-container {
+
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
 .svg-div {
-  width: 25%;
+  width: 35%;
+  height: 200px;
   display: flex;
   justify-content: center;
 }
 
 .svg {
-  width: 50%;
+  width: 100%;
+  height: 100%;
   fill: rgba(50,38,138,1);
+}
+
+.gallery-name {
+  font-family: 'Tulpen One', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  letter-spacing: 5px;
+  /*position: absolute;*/
+  margin-top: -118px;
+  margin-left: 180px;
 }
 
 .menu {
@@ -31,7 +45,7 @@ body {
   align-content: center;
   height: 95px;
   box-sizing: border-box;
-  width: 75%;
+  width: 65%;
   background: black;
 }
 
@@ -77,6 +91,7 @@ main, footer {
 }
 
 .section-name {
+  padding-left: 150px;
   font-size: 55px;
   font-weight: 400;
 }

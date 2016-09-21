@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 export default class Header extends Component {
   render() {
     return (
-      <header className="navigation-container">
+      <div>
+        <header className="navigation-container">
           <div className="svg-div">
-            <svg className="svg" viewBox='0 0 100 100'>
-              <polygon points='76.155,41.825 58.155,41.825 69.163,20.856 42.078,20.856 29.845,55.805 47.029,55.805 38.583,81.145 '/>
+            <svg className="svg" viewBox='30 0 100 100'>
+              <polygon points='76.155,47 58.155,47 69.163,20.856 45.078,20.856 32.845,62 50.029,62 40, 100'/>
             </svg>
           </div>
           <nav className="menu">
@@ -15,7 +16,11 @@ export default class Header extends Component {
               <li><a href="#">ABOUT</a></li>
             </ul>
           </nav>
-      </header>
+        </header>
+        <div className="gallery-name">
+          <h1>TROPANG KIDLAT</h1>
+        </div>
+      </div>
     )
   }
 }
