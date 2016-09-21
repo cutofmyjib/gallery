@@ -97,6 +97,11 @@ main, footer {
   padding-bottom: 25px;
 }
 
+.gallery li div {
+  padding-left: 15px;
+  height: 450px;
+}
+
 .gallery li:nth-child(odd) div {
   background: #3e94ae;
 }
@@ -105,14 +110,11 @@ main, footer {
   background: #51b096;;
 }
 
-
-
 .gallery-img {
   position: relative;
   top: 10px;
-  left: 6px;
+  left: 3px;
   mix-blend-mode: multiply;
-
 }
 
 footer {
