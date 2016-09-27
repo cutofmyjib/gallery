@@ -21,16 +21,21 @@ export default class Gallery extends Component {
       .then((response) => response.json())
       .then((response) => {
         var firstTen = response.photos.photo.slice(0, 10);
-        var imageUrls = firstTen.map(photo => this.buildPhotoUrl(photo))
-        this.setState({ photos: imageUrls })
+        this.setState({ photos: firstTen })
         console.log(this.state.photos)
       })
   }
 
   render() {
     if (this.state.photos) {
+      var imageUrls = this.state.photos.map(photo => this.buildPhotoUrl(photo))
       var list = this.state.photos.map(function(photo, index) {
-        return <img src={photo} />
+        return <li>
+          <div className="gallery-img-div">
+            <div><img className="gallery-img" src={imageUrls[index]} /></div>
+            <p>{photo.title}</p>
+          </div>
+          </li>
       })
     }
 
