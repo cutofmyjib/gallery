@@ -114,15 +114,15 @@ main, footer {
   height: 350px;
 }
 
-.gallery li:nth-child(3n+1) div {
+.gallery li:nth-child(3n+1) > div {
   background: #3e94ae;
 }
 
-.gallery li:nth-child(3n+2) div {
+.gallery li:nth-child(3n+2) > div {
   background: #51b096;
 }
 
-.gallery li:nth-child(3n+3) div {
+.gallery li:nth-child(3n+3) > div {
   background: #32558a;
 }
 
